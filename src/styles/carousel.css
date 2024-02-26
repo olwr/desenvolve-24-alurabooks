@@ -1,0 +1,86 @@
+.carousel__title {
+    color: var(--orange);
+    background-color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 2.0rem 0 0.8rem 0;
+    line-height: 2.7rem;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    display: none;
+}
+
+.swiper .swiper-pagination {
+    position: initial;
+    margin: .8rem 0;
+}
+
+/* Card */
+.card_container {
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    margin: 1.6rem;
+    padding: 1.6rem;
+}
+
+.card_container .card__desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+}
+
+.card__desc .desc {
+    margin-right: .5rem;
+}
+
+.card__desc .desc__title {
+    color: var(--orange);
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+
+.card__desc .desc__title-book {
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin: .8rem 0;
+}
+
+.card__desc .desc__text {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+.card_container .card__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0 1.3rem 0;
+}
+
+.card__buttons .buttons {
+    display: flex;
+}
+
+.buttons .buttons__item {
+    margin: 0 0.8rem;
+}
+
+.card__buttons .buttons__ancor {
+    background-color: var(--orange);
+    padding: 1.6rem 1.2rem;
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    width: 14rem;
+}

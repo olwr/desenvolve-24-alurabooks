@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url(/src/styles/header.css);
+@import url(/src/styles/banner.css);
+@import url(/src/styles/carousel.css);
+@import url(/src/styles/topics.css);
+@import url(/src/styles/contact.css);
+@import url(/src/styles/footer.css);
+
+html {
+    /* 62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    /* 16px */
+    font-size: 1.6rem;
+    background-color: var(--bg-color);
+}
+
+:root {
+    /* position: relative; */
+    box-sizing: border-box;
+    min-height: 100vh;
+
+    --font-family: "Poppins", Verdana, Geneva, sans-serif;
+    font-family: var(--font-family);
+
+    /* Colors */
+    --bg-color: #EBECEE;
+    --white: #fff;
+    --dark-blue: #002f52;
+    --gradient-blue-moz: -moz-linear-gradient(97deg, rgba(0,47,82,1) 35.49%, rgba(50,101,137,1) 165.37%);
+    --gradient-blue-webkit: -webkit-linear-gradient(97deg, rgba(0,47,82,1) 35.49%, rgba(50,101,137,1) 165.37%);
+    --gradient-blue: linear-gradient(97deg, rgba(0,47,82,1) 35.49%, rgba(50,101,137,1) 165.37%);
+    --orange: #EB9B00;
+}
