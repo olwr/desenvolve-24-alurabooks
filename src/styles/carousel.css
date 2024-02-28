@@ -9,6 +9,8 @@
     line-height: 2.7rem;
 }
 
+/* Swiper */
+
 .swiper-slide img {
     width: 100%;
 }
@@ -83,4 +85,109 @@
     text-decoration: none;
     text-align: center;
     width: 14rem;
+}
+
+/* Smaller phones */
+@media screen and (width < 428px) {
+    .card__desc img {
+        width: 160%;
+    }
+
+    .card__desc .desc_stars {
+        width: 70%;
+    }
+
+    .card__desc .desc__title {
+        font-size: 1.4rem;
+    }
+
+    .card__desc .desc__title-book {
+        font-size: 1.6rem;
+    }
+
+    .card__buttons .buttons__ancor {
+        font-size: 1.4rem;
+        width: 9rem;
+    }
+}
+
+/* Tablet */
+@media screen and (width >=1024px) {
+    .carousel__title {
+        font-size: 2.6rem;
+    }
+
+    /* Swiper */
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper .swiper-pagination {
+        margin: 3.2rem 0 4.8rem 0;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        display: flex;
+        top: 60%;
+        --swiper-navigation-size: 1.5rem;
+        --swiper-navigation-color: var(--white);
+        --swiper-navigation-sides-offset: .08rem;
+        background: var(--dark-blue);
+        background: var(--gradient-blue-moz);
+        background: var(--gradient-blue-webkit);
+        background: var(--gradient-blue);
+        width: 4.7%;
+        height: 9%;
+        border-radius: 50%;
+    } 
+
+    /* Card */
+    .card_container {
+        width: 45%;
+        margin: 4.5rem auto;
+    }
+}
+
+@media screen and (width >= 1440px) {
+    .carousel-div_container {
+        display: flex;
+        margin: 0 10vw 4.8rem 10vw;
+    }
+
+    .swiper {
+        width: 55%;
+    }
+
+    .swiper img:hover {
+        scale: 1.1;
+    }
+
+    .swiper-pagination {
+        margin: 1.6rem 0;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        top: 55%;
+    }
+
+    .card_container {
+        width: 60%;
+        margin-left: 4.8rem;
+    }
+
+    .card__desc .desc {
+        margin-right: 3.2rem;
+    }
+
+    .card__desc .desc__title {
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+    }
+
+    .card__desc .desc__text {
+        font-size: 1.6rem;
+    }
+
 }

@@ -6,3 +6,49 @@ hr {
     background-color: var(--white);
     padding: 1.6rem;
 }
+
+.footer-list {
+    display: none;
+}
+
+/* Tablet */
+@media screen and (width >= 1024px) {
+    .footer_container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer__title {
+        font-size: 2.4rem;
+    }
+
+    .footer-list {
+        display: block;
+        color: var(--light-gray);
+    }
+
+    .footer-list .footer-list__item {
+        display: flex;
+        align-items: center;
+        margin: 1.6rem 0;
+    }
+    
+    .footer-list__item a {
+        color: var(--dark-gray);
+        text-decoration: none;
+        margin-left: .8rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* Desktop */
+@media screen and (width >= 1440px) {
+    .footer_container {
+        padding: 4.8rem 0;
+    }
+    
+    .footer-list {
+        border-left: 1px solid var(--light-gray);
+        padding-left: 1.6rem;
+    }
+}

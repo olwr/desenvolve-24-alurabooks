@@ -28,6 +28,7 @@
     border-radius: 24px;
     padding: 1.6rem;
     width: 100%;
+    outline: none;
 }
 
 .banner__search::placeholder {
@@ -38,4 +39,46 @@
     text-align: center;
     background: url(/src/assets/Lupa.svg) no-repeat 3.5rem;
     line-height: 2.1rem;
+}
+
+/* Smaller phones */
+@media screen and (width < 428px) {
+    .banner__search::placeholder {
+        font-size: 1.2rem;
+        background-size: 1.2rem;
+        background-position: 1.7rem;
+    }
+}
+
+/* Tablet */
+@media screen and (width >= 1024px) {
+    .banner__title {
+        font-size: 3.6rem;
+        /* line-height: 5.4rem; */
+    }
+
+    .banner__search {
+        width: 50%;
+    }
+
+    .banner__search::placeholder {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        background-position: 8.5rem;
+    }
+}
+
+/* Desktop */
+@media screen and (width >= 1440px) {
+    .banner_container {
+        padding: 9.6rem;
+    }
+
+    .banner__search {
+        width: 40%;
+    }
+
+    .banner__search::placeholder {
+        background-position: 6.5rem;
+    }
 }

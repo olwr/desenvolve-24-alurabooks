@@ -29,6 +29,7 @@
     border-radius: 24px;
     padding: 1.6rem;
     width: 90%;
+    outline: none;
 }
 
 .contact__email::placeholder {
@@ -38,4 +39,42 @@
     text-align: center;
     background: url(/src/assets/Email.svg) no-repeat 3.5rem;
     line-height: 2.1rem;
+}
+
+/* Smaller phones */
+@media screen and (width < 428px) {
+    .contact__email::placeholder {
+        font-size: 1.3rem;
+        background-size: 1.3rem;
+        background-position: 4.5rem;
+    }
+}
+
+/* Tablet */
+@media screen and (width >= 1024px) {
+    .contact_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact__desc {
+        margin-right: 4.5rem;
+        width: 30%;
+    }
+
+    .contact__title {
+        font-size: 2.4rem;
+    }
+
+    .contact__email {
+        width: 30%;
+    }
+}
+
+/* Desktop */
+@media screen and (width >= 1440px) {
+    .contact_container {
+        padding: 4.8rem 10vw;
+    }
 }

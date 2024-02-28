@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url(/src/styles/header.css);
 @import url(/src/styles/banner.css);
 @import url(/src/styles/carousel.css);
@@ -24,10 +25,14 @@ body {
 
     --font-family: "Poppins", Verdana, Geneva, sans-serif;
     font-family: var(--font-family);
+    --font-title: "Josefin Sans", sans-serif;
 
     /* Colors */
     --bg-color: #EBECEE;
-    --white: #fff;
+    --white: #fbfbfb;
+    --black: #2e2e2e;
+    --light-gray: #858585;
+    --dark-gray: #474646;
     --dark-blue: #002f52;
     --gradient-blue-moz: -moz-linear-gradient(97deg, rgba(0,47,82,1) 35.49%, rgba(50,101,137,1) 165.37%);
     --gradient-blue-webkit: -webkit-linear-gradient(97deg, rgba(0,47,82,1) 35.49%, rgba(50,101,137,1) 165.37%);
