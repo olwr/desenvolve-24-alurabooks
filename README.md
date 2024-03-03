@@ -12,7 +12,6 @@ Projeto desenvolvido durante o curso de responsividade com mobile-first no progo
 ![lang: html](https://img.shields.io/badge/lang.-html-darkorange?style=plastic&logo=html5&logoColor=FF8C00&labelColor=white)
 ![lang: css](https://img.shields.io/badge/lang.-css-royalblue?style=plastic&logo=css3&logoColor=4169E1&labelColor=white)
 ![lang: javascript](https://img.shields.io/badge/lang.-swiper.js-gold?style=plastic&logo=javascript&logoColor=FFD700&labelColor=191919)
-![lang: markdown](https://img.shields.io/badge/lang.-markdown-black?style=plastic&logo=markdown&logoColor=191919&labelColor=white)
 
 ## Vercel
 
