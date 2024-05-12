@@ -11,6 +11,16 @@
     align-items: center;
 }
 
+.header__divs a {
+    text-decoration: none;
+}
+
+.fa-fire,
+.fa-house {
+    font-size: 3.2rem;
+    color: rgb(30, 40, 80);
+}
+
 .icons_container {
     padding: 1.6rem;
 }
@@ -196,6 +206,11 @@
         background: var(--gradient-blue-webkit);
         background: var(--gradient-blue);
     }
+
+    a .fa-fire,
+    a .fa-house {
+        display: none;
+    }
 }
 
 /* Desktop */
@@ -218,5 +233,4 @@
     .options-container {
         margin-right: auto;
     }
-
 }

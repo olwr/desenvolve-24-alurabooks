@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/src/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/src/styles/vars.css" />
+    <link rel="stylesheet" href="/src/styles/sale.css" />
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/c45cb14264.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header_container">
+        <div class="header__divs">
+            <div class="hamburger_menu icons_container">
+                <input type="checkbox" name="menu_toggle" id="menu_toggle" />
+                <label for="menu_toggle" class="menu_btn">
+                    <span></span>
+                </label>
+
+                <ul class="menu_list">
+                    <li class="menu_list__title">Categorias</li>
+                    <li><a href="#" class="menu_list__item">Programação</a></li>
+                    <li><a href="#" class="menu_list__item">Front-End</a></li>
+                    <li><a href="#" class="menu_list__item">Infraestrutura</a></li>
+                    <li><a href="#" class="menu_list__item">Business</a></li>
+                    <li><a href="#" class="menu_list__item">Design & UX</a></li>
+                </ul>
+            </div>
+
+            <img src="/src/assets/Logo.svg" alt="Logo da AluraBooks" class="icons_container">
+            <h1 class="container__title"><b class="container__title--negrito">Alura</b>Books</h1>
+        </div>
+
+        <ul class="options-container">
+            <input type="checkbox" name="" class="options__btn" id="options-menu">
+            <label for="options-menu">
+                <li class="options__item">Categorias</li>
+            </label>
+
+            <ul class="menu_list--big-screen">
+                <li><a href="#" class="menu_list__item">Programação</a></li>
+                <li><a href="#" class="menu_list__item">Front-End</a></li>
+                <li><a href="#" class="menu_list__item">Infraestrutura</a></li>
+                <li><a href="#" class="menu_list__item">Business</a></li>
+                <li><a href="#" class="menu_list__item">Design & UX</a></li>
+            </ul>
+
+            <li class="options__item"><a href="#" class="options__link">Favoritos</a></li>
+            <li class="options__item"><a href="#" class="options__link">Minha estante</a></li>
+            <li class="options__item"><a href="/index.html" class="options__link">Home</a></li>
+        </ul>
+
+        <div class="header__divs">
+            <a href="/index.html">
+                <i alt="Ofertas" class="fa-solid fa-house icons_container"></i>
+            </a>
+            <a href="#">
+                <img src="/src/assets/Favoritos.svg" alt="Meus favoritos" class="icons_container heart-icon">
+            </a>
+            <a href="#">
+                <img src="/src/assets/Compras.svg" alt="Carrinho de compras" class="icons_container">
+                <p class="header__divs__texto">Minha sacola</p>
+            </a>
+            <a href="#">
+                <img src="/src/assets/Usuario.svg" alt="Meu perfil" class="icons_container">
+                <p class="header__divs__texto">Meu perfil</p>
+            </a>
+        </div>
+
+    </header>
+
+    <!-- Banner -->
+    <section class="banner"></section>
+
+    <!-- Filters -->
+    <nav class="wrap">
+        <ul class="nav">
+            <li><button class="btn btn-front" href="#" id="btnFiltrarLivrosFront" value="front-end">LIVROS DE
+                    FRONT-END</button>
+            </li>
+            <li><button class="btn btn-back" href="#" id="btnFiltrarLivrosBack" value="back-end">LIVROS DE
+                    BACK-END</button>
+            </li>
+            <li><button class="btn btn-dados" href="#" id="btnFiltrarLivrosDados" value="dados">LIVROS DE DADOS</button>
+            </li>
+            <li><button class="btn btn-disponiveis" href="#" value="disponivel" id="btnLivrosDisponiveis">LIVROS DISPONÍVEIS</button></li>
+            <li><button class="btn btn-ordenacao" href="#" id="btnOrdenarPorPreco">ORDENAR POR PREÇO</button></li>
+        </ul>
+    </nav>
+
+    <!-- Books -->
+    <section class="livros wrap" id="livros">
+    <!--     <div class="livro">
+            <img class="livro__imagens" src="src/imagens/Cangaceiro-Javascript.png"
+                alt="Capa do livro Cangaceiro JavaScript" />
+            <h2 class="livro__titulo">
+                Cangaceiro JavaScript:
+                Uma aventura no sertão da programação
+            </h2>
+            <p class="livro__descricao">Flávio Almeida</p>
+            <p class="livro__preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div> -->
+    </section> 
+
+    <!-- Sale Price Banner -->
+    <section id="valor_total_livros_disponiveis">
+        <div class="livros__disponiveis">
+            <p>Todos os livros disponíveis por R$ <span id="valor">299,0</span></p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact_container">
+        <div class="contact__desc">
+            <h2 class="contact__title">Fique por dentro das novidades!</h2>
+            <p class="contact__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+
+        <input type="email" name="" class="contact__email" id="" placeholder="Cadastre seu e-mail" />
+    </section>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer class="footer_container">
+        <h2 class="footer__title">Grupo Alura</h2>
+        <ul class="footer-list">
+            <li class="footer-list__title">Educação</li>
+            <li class="footer-list__item">
+                <img src="/src/assets/Caelum.svg" alt="Logo da caelum">
+                <a href="#">Caelum</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/CasaDoCodigo.svg" alt="Logo da cada do código">
+                <a href="#">Caso do Código</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li class="footer-list__title">Educação online</li>
+            <li class="footer-list__item">
+                <img src="/src/assets/Alura.svg" alt="Logo da alura">
+                <a href="#">Alura</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/AluraEmpresas.svg" alt="Logo da alura para empresas">
+                <a href="#">Alura Para Empresas</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/AluraLATAM.svg" alt="Logo da alura latam">
+                <a href="#">Alura LATAM</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/AluraStart.svg" alt="Logo da alura start">
+                <a href="#">Alura START</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/MusicDot.svg" alt="Logo da music dot">
+                <a href="#">MusicDot</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/AluraLingua.svg" alt="Logo da alura língua">
+                <a href="#">Alura Língua</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/PM3.svg" alt="Logo da pm3">
+                <a href="#">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li class="footer-list__title">Comunidade</li>
+            <li class="footer-list__item">
+                <img src="/src/assets/HipstersTech.svg" alt="Logo da hipsters ponto tech">
+                <a href="#">Hipsters ponto Tech</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/ScubaDev.svg" alt="Logo da scuba dev">
+                <a href="#">Scuba Dev</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/LayersTech.svg" alt="Logo da layers ponto tech">
+                <a href="#">Layers ponto Tech</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/LikeABoss.svg" alt="Logo da like a boss">
+                <a href="#">Like a Boss</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/CarreiraSemFronteira.svg" alt="Logo da carreia sem fronteira">
+                <a href="#">Carreira sem Fronteira</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/HipstersJobs.svg" alt="Logo da hipsters ponto jobs">
+                <a href="#">Hipsters ponto Jobs</a>
+            </li>
+            <li class="footer-list__item">
+                <img src="/src/assets/GUJ.svg" alt="Logo da guj">
+                <a href="#">GUJ</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="/app/main.js"></script>
+</body>
+
+</html>

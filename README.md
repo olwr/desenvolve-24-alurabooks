@@ -6,6 +6,8 @@
 
 Projeto desenvolvido durante o curso de responsividade com mobile-first no progorama Desenvolve, projeto promovido pelo Grupo Boticário e a escola Alura. O objetivo foi a criação de um design responsivo a partir de 3 layouts (celular, tablet e desktop), começando com o menor layout e usando media queries para fazer as mudanças necessárias nos layouts maiores.
 
+Segunda parte do projeto foi desenvolvida com o curso de métodos de array, foi criada a página de ofertas (no momento, sem responsividade) onde os livros e suas informações são alimentas via uma API mock e toda interação entre JavaScript e HTML é feita com o array dos livros e seus métodos.
+
 ### Tecnologias
 ![ide: vs code](https://img.shields.io/badge/IDE-visual_studio_code-lightblue?style=plastic&logo=visualstudiocode&logoColor=0078D4&labelColor=white&color=0078D4)
 ![tech: git](https://img.shields.io/badge/git-orangered?style=plastic&logo=git&logoColor=FF4500&labelColor=white)
